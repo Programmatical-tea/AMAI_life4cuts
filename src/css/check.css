@@ -1,0 +1,94 @@
+.check_cnv {
+    padding: 0px;
+    margin: 0px;
+    background-color: black;
+}
+#check_photosel {
+    position: center;
+    top: 480px;
+    display: grid;
+    grid-template-columns: repeat(4, 480px);
+    grid-template-rows: repeat(2, 270px);
+}
+.check_block {
+    display: block;
+    text-align: center;
+    margin: 0px;
+}
+.check_num {
+    position: absolute;
+    z-index: 5;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    margin: 0px;
+    color: rgba(255, 182, 193, 1);
+    font-family: 'Do Hyeon';
+    font-size: 50px;
+    border: 5px solid rgba(255, 182, 193, 1);
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+}
+.check_sel {
+    margin: 0px;
+    border: 0px solid rgba(255, 182, 193, 1);
+    z-index: 10;
+}
+#check_num1 { left: 400px; top: 510px; }
+#check_num2 { left: 880px; top: 510px; }
+#check_num3 { left: 1360px; top: 510px; }
+#check_num4 { left: 1840px; top: 510px; }
+#check_num5 { left: 400px; top: 780px; }
+#check_num6 { left: 880px; top: 780px; }
+#check_num7 { left: 1360px; top: 780px; }
+#check_num8 { left: 1840px; top: 780px; }
+#check_amai {
+    width: auto;
+    font-family: 'Dongle', sans-serif;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    font-size: 70px;
+}
+#check_info {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 70px;
+}
+#check_order {
+    margin: 10px;
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 50px;
+}
+#check_icon {
+    margin-top: 50px;
+    font-size: 80px;
+    font-family: 'Do Hyeon', sans-serif;
+    color: lightcoral;
+}
+#check_select {
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+}
+#check_btn1 {
+    margin: 50px;
+    padding: 20px;
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 80px;
+    border: 10px solid greenyellow;
+    border-radius: 20px;
+    background-color: bisque;
+}
+#check_btn2 {
+    margin: 50px;
+    padding: 20px;
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 80px;
+    border: 10px solid palevioletred;
+    border-radius: 20px;
+    background-color: bisque;
+}
+/* font-family: 'Gowun Batang', serif;  200 */
+/* font-family: 'Dongle', serif;  300 */
+/* font-family: 'Sunflower', serif;  200 */

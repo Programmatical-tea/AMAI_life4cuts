@@ -1,0 +1,36 @@
+#photo_cnv {
+    margin-top: 0px;
+    background-color: black;
+}
+.photo_block {
+    text-align: center;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+#photo_amai {
+    width: auto;
+    font-family: 'Dongle', sans-serif;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    font-size: 70px;
+}
+#photo_info {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 70px;
+}
+#photo_order {
+    margin: 10px;
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 50px;
+}
+#photo_icon {
+    margin: 0px;
+    font-size: 150px;
+    font-family: 'Do Hyeon', sans-serif;
+    color: lightcoral;
+}
+/* font-family: 'Gowun Batang', serif;  200 */
+/* font-family: 'Dongle', serif;  300 */
+/* font-family: 'Sunflower', serif;  200 */

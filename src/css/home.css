@@ -1,0 +1,76 @@
+html {
+    margin: 0px;
+    padding: 0px;
+    width: 1920px;
+    height: 1080px;
+}
+body {
+    width: 1920px;
+    height: 1080px;
+    margin: 0px;
+    background-color: rgba(255, 182, 193, 0.5);
+    display: flex;
+    flex-direction: column;
+}
+
+#amai.block{
+    text-align: center;
+    margin-left: 0px;
+    margin-right: 0px;
+
+    width: auto;
+    font-family: 'Dongle', sans-serif;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    font-size: 100px;
+}
+#name1.leftblock{
+    text-align: left;
+    margin-left: 200px;
+    margin-right: 0px;
+
+    width: auto;
+    margin-top: 50px;
+    margin-bottom: -50px;
+    padding: 10px;
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 300px;
+}
+#name2.rightblock{
+    text-align: right;
+    margin-left:0px;
+    margin-right: 200px;
+
+    width: auto;
+    margin-top: -380px;
+    margin-bottom: -50px;
+    padding: 10px;
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 300px;
+}
+#icon.block{
+    text-align: center;
+    margin-left: 0px;
+    margin-right: 0px;
+
+    width: auto;
+    margin-top: -380px;
+    margin-bottom: 0px;
+    padding: 10px;
+    font-size: 300px;
+}
+#start.block {
+    text-align: center;
+    margin-left: 0px;
+    margin-right: 0px;
+
+    width: auto;
+    margin-top: 200px;
+    margin-bottom: 500px;
+    /*transform: translate(-50%, -50%); */
+    font-family: 'Dongle', sans-serif;
+    font-size: 80px;
+}
+/* font-family: 'Gowun Batang', serif;  200 */
+/* font-family: 'Dongle', serif;  300 */
+/* font-family: 'Sunflower', serif;  200 */

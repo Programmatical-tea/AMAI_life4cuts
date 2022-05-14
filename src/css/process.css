@@ -1,0 +1,49 @@
+#cnv {
+    margin-top: 0px;
+    background-color: black;
+}
+.block {
+    text-align: center;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.leftblock {
+    text-align: left;
+    margin-left: 200px;
+    margin-right: 1320px;
+    margin-top: -200px;
+}
+#amai {
+    width: auto;
+    font-family: 'Dongle', sans-serif;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    font-size: 70px;
+}
+#info {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 70px;
+}
+#order {
+    margin: 10px;
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 50px;
+}
+#icon {
+    margin: 0px;
+    font-size: 150px;
+    font-family: 'Do Hyeon', sans-serif;
+    color: lightcoral;
+}
+#text {
+    position: left;
+    margin-left: 900px;
+    margin-top: 150px;
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 80px;
+}
+/* font-family: 'Gowun Batang', serif;  200 */
+/* font-family: 'Dongle', serif;  300 */
+/* font-family: 'Sunflower', serif;  200 */
