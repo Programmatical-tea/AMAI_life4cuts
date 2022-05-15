@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
   
-function Home() {
+function Process() {
     let homestyle = {
         display:"flex",
         "flex-direction":"column",
@@ -12,17 +12,17 @@ function Home() {
 
     return (
       <div style={homestyle}>
-        <p class="block" id="amai">#크사네컷</p>
-        <p class="block" id="info">출력하는 중입니다!</p>
-        <p class="block" id="order">&nbsp;</p>
-        <div class="block" id="text">
+        <p class="ps_block" id="ps_amai">#크사네컷</p>
+        <p class="ps_block" id="ps_info">출력하는 중입니다!</p>
+        <p class="ps_block" id="ps_order">&nbsp;</p>
+        <div class="ps_block" id="ps_text">
             곧 아래에서<br />
             사진이 출력됩니다!<br />
             잠시만 기다려주세요 :)
         </div>
-        <canvas class="leftblock" id="cnv" width="200px" height="600px"></canvas>
+        <canvas class="ps_leftblock" id="ps_cnv" width="200px" height="600px"></canvas>
       </div>
     )
 }
 
-export default Home
+export default Process

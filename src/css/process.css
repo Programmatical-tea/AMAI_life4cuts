@@ -1,43 +1,43 @@
-#cnv {
+#ps_cnv {
     margin-top: 0px;
     background-color: black;
 }
-.block {
+.ps_block {
     text-align: center;
     margin-left: 0px;
     margin-right: 0px;
 }
-.leftblock {
+.ps_leftblock {
     text-align: left;
     margin-left: 200px;
     margin-right: 1320px;
     margin-top: -200px;
 }
-#amai {
+#ps_amai {
     width: auto;
     font-family: 'Dongle', sans-serif;
     margin-top: 30px;
     margin-bottom: 0px;
     font-size: 70px;
 }
-#info {
+#ps_info {
     margin-top: 0px;
     margin-bottom: 0px;
     font-family: 'Do Hyeon', sans-serif;
     font-size: 70px;
 }
-#order {
+#ps_order {
     margin: 10px;
     font-family: 'Do Hyeon', sans-serif;
     font-size: 50px;
 }
-#icon {
+#ps_icon {
     margin: 0px;
     font-size: 150px;
     font-family: 'Do Hyeon', sans-serif;
     color: lightcoral;
 }
-#text {
+#ps_text {
     position: left;
     margin-left: 900px;
     margin-top: 150px;
