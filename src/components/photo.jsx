@@ -33,6 +33,12 @@ class Photo extends React.Component {
     }
 
     tick() {
+
+        if (this.state.pic > 1){
+            this.setState({
+                shouldRedirect : 1
+            });
+        }
         if (this.state.t > 0){
             this.setState({
                 t : this.state.t-1,
@@ -45,21 +51,16 @@ class Photo extends React.Component {
                 pic:this.state.pic + 1
             });
         }
-        if (this.state.pic > 1){
-            this.setState({
-                shouldRedirect : 1
-            });
-        }
     }
 
     render() {
         return (
             <div style={homestyle}>
-                <p class="photo_block" id="photo_amai">#크사네컷</p>
-                <p class="photo_block" id="photo_info">카메라를 봐주세요!</p>
-                <p class="photo_block" id="photo_order">{this.state.pic} / 8</p>
-                <canvas class="photo_block" id="photo_cnv" width="960px" height="540px"></canvas>
-                <p class="photo_block" id="photo_icon">{this.state.t}</p>
+                <p className="photo_block" id="photo_amai">#크사네컷</p>
+                <p className="photo_block" id="photo_info">카메라를 봐주세요!</p>
+                <p className="photo_block" id="photo_order">{this.state.pic} / 8</p>
+                <canvas className="photo_block" id="photo_cnv" width="960px" height="540px"></canvas>
+                <p className="photo_block" id="photo_icon">{this.state.t}</p>
                 {this.state.shouldRedirect && <Navigate to='/check' />}
             </div>
         );
