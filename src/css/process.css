@@ -1,6 +1,26 @@
+.wrapper {
+    display: flex;
+    flex-direction: row;
+}
+.left {
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
 #ps_cnv {
-    margin-top: 0px;
     background-color: black;
+    display: block;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 .ps_block {
     text-align: center;
@@ -29,7 +49,7 @@
 #ps_order {
     margin: 10px;
     font-family: 'Do Hyeon', sans-serif;
-    font-size: 50px;
+    font-size: 20px;
 }
 #ps_icon {
     margin: 0px;
@@ -38,9 +58,7 @@
     color: lightcoral;
 }
 #ps_text {
-    position: left;
-    margin-left: 900px;
-    margin-top: 150px;
+    margin-top: 0px;
     font-family: 'Do Hyeon', sans-serif;
     font-size: 80px;
 }
