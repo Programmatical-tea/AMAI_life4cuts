@@ -7,6 +7,16 @@
     margin-left: 0px;
     margin-right: 0px;
 }
+
+.start_webcam {
+    text-align: center;
+    margin-left: 0px;
+    margin-right: 0px;
+    background-color: black;
+    width: auto;
+    height: fit-content;
+}
+
 #start_amai {
     width: auto;
     font-family: 'Dongle', sans-serif;
@@ -23,7 +33,7 @@
 #start_order {
     margin: 10px;
     font-family: 'Do Hyeon', sans-serif;
-    font-size: 50px;
+    font-size: 10px;
 }
 #start_icon {
     margin: 0px;
