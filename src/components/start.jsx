@@ -5,17 +5,11 @@ import Webcam from "react-webcam";
  
 function Start() {
 
-    const webcamRef = React.useRef(null);
-    const [imgSrc, setImgSrc] = React.useState(null);
-    const capture = React.useCallback(() => {
-      const imageSrc = webcamRef.current.getScreenshot();
-      setImgSrc(imageSrc);
-    }, [webcamRef, setImgSrc]);
 
     const videoConstraints = {
-      width: 1280,
-      height: 720,
-      facingMode: "user"
+      width: 1000,
+      height: 540,
+      facingMode: "enviroment"
     }
 
     let homestyle = {
@@ -33,8 +27,7 @@ function Start() {
         <div className = "start_webcam">
           <Webcam
             audio={false}
-            ref={webcamRef}
-            width={960}
+            width={1000}
             height={540}
             screenshotFormat="image/jpeg"
             videoConstraints = {videoConstraints}

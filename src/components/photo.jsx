@@ -1,5 +1,6 @@
 import React from "react";
 import { Navigate } from "react-router-dom";
+import Webcam from "react-webcam";
 
 let homestyle = {
     display:"flex",
@@ -8,13 +9,16 @@ let homestyle = {
     height:"100%"
 }
 
+
+
 class Photo extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-            t:5,
+            t:3,
             pic:1,
-            shouldRedirect:0
+            shouldRedirect:0,
+            imageSrc : 0
         };
     }
 
@@ -28,13 +32,15 @@ class Photo extends React.Component {
     componentWillUnmount() {
         clearInterval(this.timerID);
         this.setState({
+            t:3,
+            pic:1,
             shouldRedirect : 0
         });
     }
 
     tick() {
 
-        if (this.state.pic > 1){
+        if (this.state.pic > 8){
             this.setState({
                 shouldRedirect : 1
             });
@@ -47,21 +53,39 @@ class Photo extends React.Component {
         }
         else{
             this.setState({
-                t : 20, 
+                t : 3, 
                 pic:this.state.pic + 1
             });
         }
     }
 
     render() {
+        
+        const videoConstraints = {
+            width: 1000,
+            height: 540,
+            facingMode: "user"
+        }
+        
         return (
             <div style={homestyle}>
                 <p className="photo_block" id="photo_amai">#크사네컷</p>
                 <p className="photo_block" id="photo_info">카메라를 봐주세요!</p>
                 <p className="photo_block" id="photo_order">{this.state.pic} / 8</p>
-                <canvas className="photo_block" id="photo_cnv" width="960px" height="540px"></canvas>
+                <div>
+                    <Webcam
+                        audio={false}
+                        width={1000}
+                        height={540}
+                        screenshotFormat="image/jpeg"
+                        videoConstraints = {videoConstraints}
+                    >
+                    {({ getScreenshot }) => { if(this.state.t == 0) { this.state.imageSrc = getScreenshot()} }}
+                    </Webcam>
+                </div>
                 <p className="photo_block" id="photo_icon">{this.state.t}</p>
                 {this.state.shouldRedirect && <Navigate to='/check' />}
+                {this.state.imageSrc && (<img src={this.state.imageSrc}/>)}
             </div>
         );
     }
