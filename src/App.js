@@ -15,6 +15,8 @@ import Photo from './components/photo';
 import Check from './components/check';
 import Process from './components/process';
 
+let imageSet = []
+let selectedFew = ["X","X","X","X","X","X","X","X"]
 
 function App() {
   return (
@@ -23,9 +25,9 @@ function App() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/start" element={<Start />} />
-      <Route path="/photo" element={<Photo />} />
-      <Route path="/check" element={<Check />} />
-      <Route path="/process" element={<Process />} />
+      <Route path="/photo" element={<Photo imageSrc={imageSet} />} />
+      <Route path="/check" element={<Check imageSrc={imageSet} selected={selectedFew} />} />
+      <Route path="/process" element={<Process imageSrc={imageSet}/>} />
     </Routes>
 
     </Router>

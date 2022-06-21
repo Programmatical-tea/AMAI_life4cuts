@@ -10,7 +10,6 @@ let homestyle = {
 }
 
 
-
 class Photo extends React.Component {
     constructor(props){
         super(props);
@@ -18,7 +17,6 @@ class Photo extends React.Component {
             t:3,
             pic:1,
             shouldRedirect:0,
-            imageSrc : 0
         };
     }
 
@@ -27,6 +25,9 @@ class Photo extends React.Component {
             () => this.tick() ,
             1000
         );
+        while(this.props.imageSrc[0]){
+            this.props.imageSrc.pop()
+        }
     }
 
     componentWillUnmount() {
@@ -36,6 +37,7 @@ class Photo extends React.Component {
             pic:1,
             shouldRedirect : 0
         });
+        
     }
 
     tick() {
@@ -53,7 +55,7 @@ class Photo extends React.Component {
         }
         else{
             this.setState({
-                t : 3, 
+                t : 1, 
                 pic:this.state.pic + 1
             });
         }
@@ -80,12 +82,11 @@ class Photo extends React.Component {
                         screenshotFormat="image/jpeg"
                         videoConstraints = {videoConstraints}
                     >
-                    {({ getScreenshot }) => { if(this.state.t == 0) { this.state.imageSrc = getScreenshot()} }}
+                    {({ getScreenshot }) => { if(this.state.t === 0) { if (!this.props.imageSrc[this.state.pic]) { this.props.imageSrc.push( getScreenshot() ) } } }}
                     </Webcam>
                 </div>
                 <p className="photo_block" id="photo_icon">{this.state.t}</p>
                 {this.state.shouldRedirect && <Navigate to='/check' />}
-                {this.state.imageSrc && (<img src={this.state.imageSrc}/>)}
             </div>
         );
     }
